@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>
+        form
+    </title>
+
+    <body>
+        <form id="myForm" action="form1">
+            <div id="heading">
+                <h1 align="center"> Let's Talk</h1>
+                <h2 align="center"> Think you have what it takes.Show us !</h2>
+
+            </div>
+            <div class="personal">
+                <ol type="1">
+                    <li>Personal information</li>
+
+                </ol>
+                <hr>
+
+                <div class="row">
+                    <div class="column1" style="background-color:#454E57">
+
+                        <input id="nameValidation" type="text" name="firstname" placeholder="Full Name*" pattern="[a-zA-Z]{5,}" required>
+                        <br>
+
+                        <input type="email" id="email1" name="email1" required placeholder="Email*">
+                        <br>
+
+                        <input type="email" id="email2" name="email2" placeholder="Re-enter email*">
+                        <br>
+                        <br>
+
+                    </div>
+                    <div class="column2" style="background-color:#454E57;">
+                        <input  type="number" id="phoneNumber" name="phone" placeholder="Phone number* " title="Ten digits code" required>
+
+                    </div>
+                    <div class="column3" style="background-color:#454E57;" required>
+                        <input type="text" id="address1" name="Address" placeholder="Address*" pattern="[a-zA-Z]{5,}" required>
+                        <input type="text" id="address2" name="Address" required>
+                    </div>
+                    <div class="column4">
+                        <input id="city" type="text" name="city" size="50" placeholder="City*" required>
+                        <input id="state"type="text" name="State" size="50" placeholder="State" required>
+                        <input id="country"type="text" name="country" size="50" placeholder="country/Region" required>
+                        <input id="postalCode"type="number" name="zip" size="50" placeholder="zip/postal code" required>
+                    </div>
+                    <div class="column5" style="background-color:#454E57;">
+                        <input type="text" name="firstname" placeholder="How did you hear about us?">
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="skills">
+                <ol type="1" start="2">
+                    <li>Skills and location</li>
+
+                </ol>
+                <hr>
+                <p>Which is your primary design discipline?</p>
+            </div>
+            <div class="buttons">
+                <div style="display: inline-block;">
+                    <input checked type="radio" name="radio" id='box1'>
+                    <label for='box1'>Design Research</label>
+                </div>
+
+                <div style="display: inline-block;">
+                    <input type="radio" name="radio" id="box2">
+                    <label for='box2'>Visual Design</label>
+                </div>
+
+                <div style="display: inline-block;">
+                    <input type="radio" name="radio" id="box3">
+
+                    <label for='box3'>UX Design</label>
+                </div>
+
+                <div style="display: inline-block;">
+                    <input type="radio" name="radio" id="box4">
+                    <label for='box4'>Front-end Dev</label>
+                </div>
+            </div>
+
+            <div class="r1">
+                <div class="c1">
+
+                    <h4>Do you have experience with anyother disciplines?</h4>
+
+                    <input class="checkBox" type="checkbox" name="checkBox" value="course" id="ck1" checked>
+                    <label for='ck1'> Visual design</label>
+
+                    <br>
+                    <input class="checkBox" type="checkbox" name="checkBox" value="course" id="ck2" checked>
+                    <label for='ck2'>UX Design</label>
+
+                    <br>
+                    <input class="checkBox" type="checkbox" name="checkBox" value="Course" id="ck3" checked>
+                    <label for='ck3'>Frontend Development</label>
+
+                    <br>
+                </div>
+                <div class="c2">
+
+                    <h3>where r u interested in working?</h3>
+                    <p>you must be logically authorized to work without visa
+                        <br>sponshorship in location you choose</p>
+                     <p id="error"></p>   
+
+                    <input type="checkbox2" value="country" id="ck4" checked="checked" />
+                    <label for="ck4">Austin,Texas</label>
+
+                    <br>
+                    <input class="checkBox2" type="checkbox" name="uxdesign" value="country" id="ck5" checked>
+                    <label for='ck5'>Newyork,Newyork </label>
+
+                    <br>
+                    <input class="checkBox2" type="checkbox" name="front end devolopment" value="country" id="ck6" checked>
+                    <label for='ck6'>Toronto,Canada </label>
+
+                    <br>
+                    <input class="checkBox2" type="checkbox" name="visual design" value="country" id="ck7" checked>
+                    <label for='ck7'>Dublin,ireland </label>
+
+                    <br>
+                    <input class="checkBox2" type="checkbox" name="uxdesign" value="country" id="ck8" checked>
+                    <label for='ck8'>Hursley, United Kingdom </label>
+
+                    <br>
+                    <input class="checkBox2" type="checkbox" name="front end devolopment" value="country" id="ck9" checked>
+                    <label for='ck9'>Boeblingan,Germany </label>
+
+                    <br>
+                    <input class="checkBox2" type="checkbox" name="front end devolopment" value="country" id="ck10" checked>
+                    <label for='ck10'>some where else</label>
+
+
+                </div>
+            </div>
+            <div class="skills">
+                <ol type="1" start="3">
+                    <li>Skills and location</li>
+
+                </ol>
+                <hr>
+                <p> Prove you are IBM's next great designer by showing us who you are. What you have done. How you think. Tell
+                    us your story.</p>
+                <br>
+
+                <div class="portfolio" style="background-color:#454E57;">
+                    <input id="portfolio"type="text" name="portfolio" placeholder="Portfolio link" , required>
+                    <br>
+                    <br>
+
+                    <textarea placeholder="Anything else(link availability etc)?"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" name="submit" value="Submit" id="submit" />
+
+                </div>
+
+            </div>
+        </form>
+        <script src="jscript.js"></script>
+
+    </body>
+
+</html>
